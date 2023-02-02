@@ -104,6 +104,9 @@ PRODUCT_COPY_FILES += \
     device/generic/car/common/preinstalled-packages-product-car-emulator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-emulator.xml \
     device/google/cuttlefish/shared/auto/preinstalled-packages-product-car-cuttlefish.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-cuttlefish.xml
 
+#overwrite boot animation
+PRODUCT_COPY_FILES += \
+    device/brcm/rpi4-car/bootanimation-car.zip:system/media/bootanimation.zip
     
 # Inherit the main AOSP car makefile that turns this into an Automotive build
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)

@@ -4,4 +4,11 @@
     <bool name="def_wifi_on">true</bool>
     <bool name="def_accelerometer_rotation">true</bool>
     <bool name="def_auto_time">true</bool>
+    <integer name="def_screen_brightness">128</integer>
+    <bool name="def_bluetooth_on">false</bool>
+    <integer name="def_location_mode">3</integer>
+    <bool name="def_lockscreen_disabled">true</bool>
+    <bool name="def_stay_on_while_plugged_in">true</bool>
+    <bool name="def_device_provisioned">true</bool>
+    <bool name="def_user_setup_complete">true</bool>
 </resources>
