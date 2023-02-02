@@ -91,11 +91,6 @@ PRODUCT_COPY_FILES += \
     device/generic/goldfish/data/etc/apns-conf.xml:system/etc/apns-conf.xml \
     device/sample/etc/old-apns-conf.xml:system/etc/old-apns-conf.xml
 
-
-# Whitelisted packages per user type
-PRODUCT_COPY_FILES += \
-  device/generic/car/common/preinstalled-packages-product-car-emulator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-emulator.xml
-
 # Additional selinux policy
 BOARD_SEPOLICY_DIRS += device/generic/car/common/sepolicy
 
@@ -107,6 +102,5 @@ PRODUCT_COPY_FILES += \
 #overwrite boot animation
 PRODUCT_COPY_FILES += \
     device/brcm/rpi4-car/bootanimation-car.zip:system/media/bootanimation.zip
-    
-# Inherit the main AOSP car makefile that turns this into an Automotive build
+
 $(call inherit-product, packages/services/Car/car_product/build/car.mk)
