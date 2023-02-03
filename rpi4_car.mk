@@ -6,7 +6,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     config.override_forced_orient=true \
     persist.bluetooth.enablenewavrcp=false
 
-PRODUCT_IS_AUTO := true
 DEVICE_PACKAGE_OVERLAYS += device/google/cuttlefish/shared/auto/overlay
 ENABLE_EVS_SERVICE ?= true
 ENABLE_MOCK_EVSHAL ?= true
