@@ -98,6 +98,13 @@ PRODUCT_COPY_FILES += \
     device/generic/car/common/preinstalled-packages-product-car-emulator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-emulator.xml \
     device/google/cuttlefish/shared/auto/preinstalled-packages-product-car-cuttlefish.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-car-cuttlefish.xml
 
+# CarAOSPHost
+PRODUCT_PACKAGES += \
+    CarAOSPHost
+
+PRODUCT_COPY_FILES += \
+    packages/apps/Car/AOSPHost/com.android.car.templates.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.car.templates.host.xml
+
 #overwrite boot animation
 PRODUCT_COPY_FILES += \
     device/brcm/rpi4-car/bootanimation-car.zip:system/media/bootanimation.zip
